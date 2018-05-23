@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "trying to start solr"
+service solr start
+echo "started solr"
+
+/bin/bash

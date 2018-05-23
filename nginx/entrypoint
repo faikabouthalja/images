@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "starting nginx"
+/etc/init.d/nginx start 
+echo "nginx : status: started"
+tail -f /var/log/nginx/access.log
+/bin/bash

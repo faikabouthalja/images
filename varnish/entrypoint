@@ -1,0 +1,8 @@
+#!/bin/bash
+
+exec varnishd -F -u varnish \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s malloc,256m
+
+/bin/bash
